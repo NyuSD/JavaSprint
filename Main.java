@@ -29,5 +29,31 @@ public class Main {
         Prescription prescription2 = new Prescription("PR002", doctor2, patient2, med2);
         system.acceptPrescription(prescription1);
         system.acceptPrescription(prescription2);
+        
+        // Testing
+        System.out.println("\n=== Searching for Doctors ===");
+        System.out.println(system.searchDoctorByName("Dr. Smith"));
+
+        System.out.println("\n=== Searching for Patients ===");
+        System.out.println(system.searchPatientByName("Alice Brown"));
+
+        System.out.println("\n=== Searching for Medications ===");
+        System.out.println(system.searchMedicationByName("Aspirin"));
+
+        System.out.println("\n=== Checking for Expired Medications ===");
+        system.checkExpiredMedications();
+
+        System.out.println("\n=== Printing Prescriptions Issued by Dr. Smith ===");
+        system.printPrescriptionsByDoctor("Dr. Smith");
+
+        System.out.println("\n=== Restocking Ibuprofen ===");
+        system.restockMedication("Ibuprofen");
+
+        System.out.println("\n=== Generating System Report ===");
+        system.generateReport();
+
+        System.out.println("\n=== Removing a Medication (Ibuprofen) ===");
+        system.removeMedication("M002");
+        system.generateReport();
     }
 }
