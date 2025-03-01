@@ -66,5 +66,6 @@ JavaSprint/
 ├── MedicationTrackingSystem.java
 ├── Main.java
 ├── README.md
+│-- docs/ (contains documentation)
 
 ```
