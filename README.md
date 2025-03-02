@@ -47,7 +47,7 @@ cd JavaSprint
 ```
 3. Compile
 ```
-javac -d bin src/*.java
+javac -d bin *.java
 ```
 4. Run
 ```
@@ -66,5 +66,6 @@ JavaSprint/
 ├── MedicationTrackingSystem.java
 ├── Main.java
 ├── README.md
+│-- docs/ (contains documentation)
 
 ```
